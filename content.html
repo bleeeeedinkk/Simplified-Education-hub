@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - Simplified Education Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Simplified Education Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="nav-btn">Apply Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get Started Today</h1>
+            <p>Join thousands of successful students at Simplified Education Hub</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Application Form -->
+                <div class="contact-form-section fade-in-on-scroll">
+                    <h2>Application Form</h2>
+                    <p>Limited seats available for 2026–2027 batch. Apply now!</p>
+                    
+                    <form id="applicationForm" class="application-form">
+                        <div class="form-group">
+                            <label for="name">Full Name <span>*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span>*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="class">Class/Grade <span>*</span></label>
+                            <select id="class" name="class" required>
+                                <option value="">Select a class</option>
+                                <option value="5th">5th Grade</option>
+                                <option value="6th">6th Grade</option>
+                                <option value="7th">7th Grade</option>
+                                <option value="8th">8th Grade</option>
+                                <option value="9th">9th Grade</option>
+                                <option value="10th">10th Grade</option>
+                                <option value="11th-science">11th Grade (Science)</option>
+                                <option value="11th-commerce">11th Grade (Commerce)</option>
+                                <option value="12th-science">12th Grade (Science)</option>
+                                <option value="12th-commerce">12th Grade (Commerce)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="board">Board <span>*</span></label>
+                            <select id="board" name="board" required>
+                                <option value="">Select a board</option>
+                                <option value="gseb">GSEB (Gujarat)</option>
+                                <option value="cbse">CBSE</option>
+                                <option value="icse">ICSE</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="course">Interested Course(s) <span>*</span></label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="course" value="vedic-maths">
+                                    <span>Vedic Maths</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="course" value="abacus">
+                                    <span>Abacus</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="course" value="creative-arts">
+                                    <span>Drawing & Creative Arts</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us anything else about yourself..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary large">Submit Application</button>
+                        <p class="form-note">We'll contact you within 24 hours to confirm your enrollment.</p>
+                    </form>
+                </div>
+
+                <!-- Contact Info & QR Code -->
+                <div class="contact-info-section fade-in-on-scroll">
+                    <h2>Quick Contact</h2>
+                    
+                    <div class="contact-box">
+                        <h3><i class="fas fa-phone"></i> Call Us</h3>
+                        <p><a href="tel:+919999999999">+91 99999-99999</a></p>
+                        <p class="small">Available: Mon-Sat, 9 AM - 6 PM</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <h3><i class="fas fa-envelope"></i> Email Us</h3>
+                        <p><a href="mailto:hello@simplifiededucationhub.com">hello@simplifiededucationhub.com</a></p>
+                        <p class="small">We respond within 24 hours</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                        <p>[Your Institute Address]</p>
+                        <p class="small">GPS Coordinates: [Latitude, Longitude]</p>
+                    </div>
+
+                    <div class="qr-section">
+                        <h3><i class="fas fa-qrcode"></i> Scan to Apply</h3>
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://your-domain.com/contact.html" alt="QR Code">
+                        </div>
+                        <p>Quick registration via WhatsApp</p>
+                    </div>
+
+                    <div class="early-bird-offer">
+                        <h3><i class="fas fa-gift"></i> Special Offer</h3>
+                        <p><strong>Early Bird Discount: 20% OFF</strong></p>
+                        <p>For first 50 enrollments of 2026–2027 batch</p>
+                        <p class="countdown">Offer ends: 31st May 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Apply Section -->
+    <section class="why-apply">
+        <div class="container">
+            <h2 class="section-title">Why Apply to Simplified Education Hub?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in-on-scroll">
+                    <div class="benefit-icon">✅</div>
+                    <h3>Premium Quality Education</h3>
+                    <p>Expert faculty with proven teaching methodologies</p>
+                </div>
+                <div class="benefit-card fade-in-on-scroll">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Flexible payment plans and early bird discounts available</p>
+                </div>
+                <div class="benefit-card fade-in-on-scroll">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Proven Results</h3>
+                    <p>95% success rate with certified achievements</p>
+                </div>
+                <div class="benefit-card fade-in-on-scroll">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Holistic Development</h3>
+                    <p>Focus on academics, creativity, and personal growth</p>
+                </div>
+                <div class="benefit-card fade-in-on-scroll">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Small Batch Sizes</h3>
+                    <p>Personalized attention for every student</p>
+                </div>
+                <div class="benefit-card fade-in-on-scroll">
+                    <div class="benefit-icon">🌟</div>
+                    <h3>Supportive Community</h3>
+                    <p>Friendly environment with caring mentors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item fade-in-on-scroll">
+                    <div class="faq-header">
+                        <h3>What is the admission process?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-content">Simply fill out the application form on this page or call us. We'll schedule a brief orientation and you can enroll immediately!</p>
+                </div>
+
+                <div class="faq-item fade-in-on-scroll">
+                    <div class="faq-header">
+                        <h3>When does the batch start?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-content">The 2026–2027 batch begins in June 2026. Early enrollments get 20% discount on tuition fees.</p>
+                </div>
+
+                <div class="faq-item fade-in-on-scroll">
+                    <div class="faq-header">
+                        <h3>What are the class schedules?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-content">We offer flexible schedules: weekday batch (3-6 PM), weekend batch (Saturday-Sunday), and online options.</p>
+                </div>
+
+                <div class="faq-item fade-in-on-scroll">
+                    <div class="faq-header">
+                        <h3>Are there refund policies?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-content">Yes, we offer full refund within 7 days if you're not satisfied with our teaching methods.</p>
+                </div>
+
+                <div class="faq-item fade-in-on-scroll">
+                    <div class="faq-header">
+                        <h3>Can I choose multiple courses?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-content">Absolutely! Many students enroll in multiple courses. Special package discounts are available.</p>
+                </div>
+
+                <div class="faq-item fade-in-on-scroll">
+                    <div class="faq-header">
+                        <h3>How do I prepare before joining?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <p class="faq-content">We provide welcome materials and an orientation session to prepare you. No prior experience needed!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Simplified Education Hub</h4>
+                    <p>Helping students grow with clarity, confidence, and smart learning methods.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 [Your Address]</p>
+                    <p>📞 +91-XXX-XXX-XXXX</p>
+                    <p>📧 hello@simplifiededucationhub.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Simplified Education Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, var(--primary), #2a4a7f);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-main {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-form-section h2,
+        .contact-info-section h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form-section > p {
+            color: var(--gray-text);
+            margin-bottom: 2rem;
+        }
+
+        .application-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .form-group span {
+            color: #e74c3c;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checkbox-label input {
+            width: auto;
+            margin-right: 0.8rem;
+            cursor: pointer;
+        }
+
+        .form-note {
+            color: var(--gray-text);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-box h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-box p {
+            margin: 0.5rem 0;
+            color: var(--gray-text);
+        }
+
+        .contact-box a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box .small {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .qr-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1.5rem;
+        }
+
+        .qr-section h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .qr-code {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .qr-code img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .early-bird-offer {
+            background: linear-gradient(135deg, var(--secondary), #f4d69f);
+            color: var(--primary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .early-bird-offer h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        .early-bird-offer p {
+            margin: 0.5rem 0;
+            color: var(--primary);
+        }
+
+        .countdown {
+            font-weight: 600;
+            font-size: 0.95rem !important;
+        }
+
+        .why-apply {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        .faq-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+
+        .faq-grid {
+            display: grid;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .faq-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            background: var(--light-bg);
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover .faq-header {
+            background: white;
+            border-bottom-color: var(--secondary);
+        }
+
+        .faq-header h3 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            transition: transform 0.3s;
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+            color: var(--gray-text);
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 300px;
+            padding: 1.5rem;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-hero h1 {
+                font-size: 2rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for applying! We will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
